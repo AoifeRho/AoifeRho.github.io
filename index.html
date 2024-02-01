@@ -1,84 +1,87 @@
-<!doctype html>
-<!--
-아래 html 코드에서
-- 본인 프로필 내용으로 변경하세요
-- HTML UI(화면)을 업그레이드 하세요.
-- 수행 프로젝트에서 1차 프로젝트 깃허브를 링크하세요
--->
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Hi! I am GAHYUN!</title>
-<link href="./style4.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi! I am GAHYUN!</title>
+    <link rel = "stylesheet" href = "./css/main.css">
+    <link rel = "stylesheet" href = "./css/scroll.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
 </head>
-
 <body>
-<div class="container">
-		<header>
-			  <h1>데이터 분석가 지망생</h1>
-				<h2>열심히 노력하는 노가현 입니다.</h2>
-		</header>  
-    <nav class="navi">
-      <ul>
-        <li><a href="#">인적 사항</a></li>
-        <li><a href="#">학력 사항</a></li>
-        <li><a href="#">경력 사항</a></li>
-        <li><a href="#">보유 기술</a></li>
-      </ul>
-    </nav>  
-		<section class="content">
-			<article>
-				<h2>인적 사항</h2>
-				<h3>¤ 노가현</h3>
-					<p>안녕하세요. 저는 데이터 분석가가 되기 위해 노력 중인 노가현입니다. 저는 데이터를 바탕으로 의사 결정을 내리는 일에 관심을 가지고 있습니다. 이를 위해 다양한 분야의 데이터 분석 경험을 쌓고 있습니다.</p>
-					<p>저는 데이터 분석뿐만 아니라 프로그래밍, 통계학, 머신러닝, 딥러닝 등 다양한 분야에도 관심을 가지고 공부하고 있습니다.</p>
-			</article>
-			<article>
-				<h2>경력 및 학력 사항</h2>
-				<h3>¤ 한국대학교</h3>
-					<p>컴퓨터 공학 전공으로 학사 학위를 받았습니다. 대학에서는 다양한 프로그래밍 언어를 배웠습니다. 특히 웹 개발 분야에 흥미를 느꼈습니다.</p>
-					<p>데이터 과학을 전공하고 있습니다. 대학에서는 데이터베이스, 데이터 마이닝, 통계학, 프로그래밍 등 다양한 과목을 수강하며 데이터 분석 능력을 키우기 위해 노력하고 있습니다.</p>
-					<p>또한 대학에서는 데이터 분석 관련 프로젝트를 수행하며, 팀원들과의 협업 능력도 향상시켰습니다.</p>
-			</article>
-			<article>
-				<h2>수행 프로젝트</h2>
-<!--	1차 프로젝트 제목과 링크를 아래내용을 참고해서 변경하세요.			-->
-				<h3>¤ NodeJS 기반 양수 음수 판독기</h3>
-					<p> <a href="https://github.com/epata94/NodeJS">HTML 입력을 AWS 클라우드에 전송하여 양수와 음수를 판별하는 서비스</a>   </p>
 
-			</article>
-		</section>	
-		<aside class="sidebar">
-			<h3>보유 기술</h3>
-			<ul>
-				<li>GIT</li>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>BootStrap</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>Oracle</li>
-				<li>Java</li>
-				<li>Spring</li>
-				<li>Python</li>
-				<li>Pandas</li>
-				<li>Jypyter</li>
-				<li>Open API</li>
-				<li>웹크롤링</li>
-				<li>RPA</li>
-				<li>Machine Learning</li>
-				<li>Deep Learning</li>
-				<li>EDA</li>
-				<li>시계열 분석</li>
-				<li>NLP</li>
-				<li>데이터 시각화</li>
-				<li>페르소나</li>
-			</ul>
-		</aside>
-		<footer>
-			<p>오늘의 노력은 내일의 성공을 이룹니다. 계속해서 꾸준히 노력하며, 나 자신을 믿고 달려보겠습니다. </p>
-			<p> cskim@gmail.com</p>
-		</footer>
-</div>
+<div id="container">
+    <header id = "header">
+        <nav class ="menu">
+            <ul>
+                <li><a href = "index.html" <b>Home</b></a></li>
+                <li><a href = "about.html" <b>About</b></a></li>
+                <li><a href = "favorites.html" <b>What I love</b></a></li>
+                <li><a href = "contact.html" <b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="list">
+        <div class="one">
+            <span class="profile"><img src="./imgs/me.jpg" width="550px;" height="550px" alt=""/></span>
+            <h3><strong>안녕하세요 개발자로 새로운 도전을 시작하는,</strong> <br>도전을 멈추고 싶지 않은 노가현입니다!</h3>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class ="two">
+            <img class = "me" src ="./imgs/me2.jpg" alt="" width="450px;" height="500px">
+            <h3 class ="intext"> <strong>What would I lose if I learn coding?<br>Absoultely nothing!</strong><br><br>
+                🤍첫번째 프로젝트<br>
+                <a href="https://github.com/epata94/NodeJS">프론트엔드 기술기반 남성 스포츠 의류 브랜드 웹 페이지</a> <br><br>
+                But I don't want to see myself in the same industry in the few years. <br>
+                The reason I want to be a fullstack engineer is that <br>
+                there is no limits for studying and developing myself! <br>
+                Achievement is one of my motivation of my life. <br><br>
+                To be a great developer, <br>
+                achievement and developing myself constantly <br>
+                is the most important thing, I think.
+                <br><br>
+                For the future junior developer!</h3>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="three">
+            <h1><br><br> 💕 💕 💕 </h1>
+            <div class = "favorites">
+                <div class="lists">
+                    <img class = "list_img" src="./imgs/what i love/challenge.jpg" alt="">
+                    <p class = "list_text"> 모든 도전을 좋아합니다!<br>클라이밍 / 롱보드 / 웨이크보드 / 도자기체험 등등</p>
+                </div>
+
+                <div class="lists">
+                    <img class = "list_img" src="./imgs/what i love/cook.webp" alt="">
+                    <p class = "list_text"> 요리하는 걸 즐깁니다!<br> ~직접 싸 다닌 도시락 모음~ </p>
+                </div>
+
+                <div class="lists">
+                    <img class = "list_img" src="./imgs/what i love/poledance.jpg" alt="">
+                    <p class = "list_text"> 사랑하는 취미, 폴댄스!<br> 성취감을 얻고 인내심을 가질 수 있어요. </p>
+                </div>
+
+                <div class="lists">
+                    <img class = "list_img" src="./imgs/what i love/trip.jpg" alt="">
+                    <p class = "list_text"> 친구들과 함께하는 여행을 좋아해요! <br>  특히 일본여행이 좋아요! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class = "four">
+            <img class = "contact_img" src ="./imgs/bg.jpg">
+            <a href="mailto:gahyun.rh64@gmail.com" class="ct">Gmail</a>
+            <a href="https://github.com/dashboard" class="ct">Github</a>
+        </div>
+    </div>
+    <div>
 </body>
-</html>
